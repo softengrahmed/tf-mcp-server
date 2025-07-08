@@ -1,11 +1,12 @@
 [project]
 name = "tf-mcp-server"
 version = "0.1.0"
+description = "Terraform Drift Detection MCP Server"
 dependencies = [
     "fastapi",
     "uvicorn",
-    "pydantic"
+    "fastmcp",  # make sure it's installable or replace with correct import source
 ]
 
-[project.scripts]
-tf-mcp-server = "tf_mcp_server.main:app"
+[tool.setuptools]
+packages = ["tf_mcp_server"]
