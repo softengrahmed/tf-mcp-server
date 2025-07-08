@@ -1,0 +1,11 @@
+[project]
+name = "tf-mcp-server"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic"
+]
+
+[project.scripts]
+tf-mcp-server = "tf_mcp_server.main:app"
